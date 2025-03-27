@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.pergunta {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+.pergunta-titulo {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.opcao {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.resposta-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+/* Estilo para o menu */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .menu {
+    list-style: none;
+    display: flex; /* Alinha os itens na horizontal */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.3s ease;
+}
+.navbar .menu li {
+    display: inline-block; /* Garante que os itens fiquem na horizontal */
+}
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Esconde o botão em telas maiores */
+}
+/* Menu retrátil para telas menores */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão em telas menores */
+    }
+    .menu {
+        flex-direction: column; /* Alinha os itens na vertical em telas menores */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .menu.active {
+        max-height: 300px; /* Expande o menu em telas menores */
+    }
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form label {
+    font-weight: bold;
+}
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #0056b3;
+}
