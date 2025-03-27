@@ -1,0 +1,75 @@
+/*---------------------------------------------------------CLASS-----------------------------------------------------------------------------*/
+
+.box{
+    background: linear-gradient(to right, white, rgb(248, 247, 252)); /* Cria um fundo degradê que vai da esquerda para a direita iniciando pela um rgb da cor azul claro quase branco
+    e gradualmente muda seu rgb para um tom levemente semelhante */
+    border-radius: 30px; /* Deixa os cantos do elemento arredondados com um raio de 30px */
+    display: flex;  /* layout deles é controlado de forma mais dinâmica e eficiente, sem precisar de posicionamento manual  */
+    padding: -20px -10px;  /* 20px de padding nas partes superior e inferior, e 10px nas laterais */
+    width: 700px;  /* Define a largura do formulário */
+    margin: auto;  /* Centraliza o formulário na tela */
+    position: relative; /* Define que o posicionamento do elemento será relativo à sua posição normal no fluxo do layout */
+    top: -100px; /* Move o elemento 100px para cima */
+
+}
+.formulario{ 
+    color: rgb(0, 0, 0,0.8); /* Define uma cor rgb para tags nomeadas com essa classe*/
+    margin: 10px  25px; /* Cria um espaçamento externo entre um elemento e os outros ao seu redor */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Escolha de fonte Arial  */
+}
+
+.box_cpf, .box_nome_completo, .box_email, .box_password {
+    position: relative; /* facilita a movimentação das labels */
+    bottom: 10px; /* posiciona as labels de cima para baixo */
+    margin-top: 20px; /* Adiciona uma margem no topo das labels*/
+    text-align: center; /* Alinha ao centro os labels */
+    font-size: 30px; /* Aumenta o Tamanho das Fontes */
+
+    display: flex; /* Torna a caixa um contêiner flexível */
+    flex-direction: column; /* Empilha o conteúdo verticalmente */
+    align-items: center; /* Alinha os itens no centro horizontalmente */
+}
+
+.lab_cpf, .lab_nome_completo, .lab_email{/* Texto de CPF, " nome completo" e do email */
+    margin-right: 0px; /* Define uma margem externa negativa de 140px do lado direito do elemento */
+    
+}
+
+/*---------------------------------------------------------IDs-----------------------------------------------------------------------------*/
+
+#txt_cadastro{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /*Escolha de fonte Arial*/
+    font-size: 45px; /* altera o tamnho da fonte */
+    color: #003366;  /* Altera a cor da font */
+}
+#label_perfil, #buttons{
+    color:white; /* Altera as cores das fontes */
+    background: linear-gradient( to right, #003366, #40E0D0);/* Cria um fundo em degradê */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;/* Escolha de fonte Arial  */
+    font-size: 20px; /* Aumenta o tamanho da Font dos botões  */ 
+}
+
+
+/*---------------------------------------------------------NOMES-----------------------------------------------------------------------------*/
+
+fieldset{         /* Altera o Quadrado onde se encontra o Formulário */
+    font-size: 30px; /* Aumenta o tamanho da Font dos cabeçalhos */
+    text-align: center; /* Centraliza do contéudo para o centro */
+    margin: 0px; /* Altera o Quadrado onde se encontra o Formulário*/
+    border: none; /* retira toda as bordas dos cabeçalhos */
+    position: relative; /* facilita a movimentação do formulário */
+    left: 120px; /* Movimenta o Formulário da direit para a esquerda */
+}
+img {
+    width: 130px; /* Largura */
+    height: 140.5px; /* Altura */
+    position: relative; /* Permite deslocar a imagem em relação à sua posição original */
+    top: -67px; /* altura da posição da imagem */
+    right: 50px; /* posição horizontal direita da imagem */ 
+}
+body{
+   
+    background: linear-gradient(#003366, #40E0D0);/* Cria um fundo em degradê */
+    padding: 20px; /* Cria um espaço interno de 20px dentro do elemento */
+    margin: 48.5px; /* Adiciona espaçamento externo */
+}
