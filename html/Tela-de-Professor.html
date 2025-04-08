@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela do Professor</title>
+</head>
+<body>
+    <!--Criacão do controle de abas-->
+    <div>
+        <input type="radio" id="aba1" name="abas" checked>
+        <input type="radio" id="aba2" name="abas">
+        <input type="radio" id="aba3" name="abas">
+        <input type="radio" id="aba4" name="abas">
+        <input type="radio" id="aba5" name="abas">
+        <input type="radio" id="aba6" name="abas">
+        <input type="radio" id="aba7" name="abas">
+    </div>
+    <!--Barra de Pesquisa!-->
+    <form action="/pesquisar">
+        <input type="text" name="q" placeholder="Pesquisar Disciplina...">
+        <input type="submit" value="Pesquisar">
+        <br><br>
+    <nav>
+        <!----Aqui estou criando o Menu de navagação e as abas.-->
+        <label for="aba1"><button>Inicio</button>
+        <h3>Olá Bem vindo Professor!</h3><!--Criando uma saudação quando o professor for acessa a tela de inicio-->
+        <!--Criação da tabela de inicio-->
+        <table>
+            <tr>
+                <td>
+                    <button><br>Atividades Pendentes<br></button>
+                </td>
+                <td>
+                    <button><br>Estatísticas<br></button>
+                </td>
+                <td><button><br>Provas de Concurso.<br></button></td>
+            </tr>
+        </table>
+        <button>Sair</button>
+        <!--Notificação-->
+        <h2>🔔 Notificações</h2>
+        <ul>
+          <li>Você recebeu uma nova mensagem.</li>
+          <li>Alteração feita com sucesso.</li>
+          <li>Material já disponível.</li>
+          <li>Sua mensagem foi enviada.</li>
+        </ul>
+        <br><br><!--Aqui estou usando esse comando para quebrar 2 linhas-->
+        <label for="aba2"><button> Disciplinas</button></label>
+        <br><br>
+        <label for="aba3"><button>Notas</button></label>
+        <br><br>
+        <label for="aba4"><button>Materiais de Aula</button></label>
+        <br><br>
+        <label for="aba5"><button>Calendário</button></label>
+        <br><br>
+        <label for="aba6"><button>Mensagem</button></label>
+        <br><br>
+        <label for="aba7"><button>Perfil</button></label>
+    </nav>
+    <!--Expecificação sobre cada aba criada e o que exatamente ela poderá fazer.-->
+  <section>
+    <div id="conteudo2">
+        <p>Onde ficará os conteudos das disciplinas.</p>
+    </div>
+    <div id="conteudo3">
+        <p>Aba onde o professor vai poder visualizar e lançar as notas das disciplina.
+        </p>
+    </div>
+    <div id="conteudo4">
+        <p>Onde ele vai poder enviar questão e atividade para o site</p>
+    </div>
+    <div id="conteudo5">
+        <p>Onde ficará o Calendário.</p>
+    </div>
+    <div id="conteudo6">
+        <p>Onde o professor vai poder entrar em contato com os alunos.</p>
+    </div>
+    <div id="conteudo7">
+        <p>Pefil do professor.</p>
+    </div>
+  </section>
+    
+    
+    <div>
+
+    </div>
+</body>
+</html>
